@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fast Food Takeout</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Fast Food Ordering</h1>
+    </header>
+    <main>
+        <section class="Menu">
+            <h2>Menu</h2>
+            <ul>
+                <li>1. Hamburger - $5.99</li>
+                <li>2. Cheeseburger - $6.49</li>
+                <li>3. Chicken Sandwich - $7.99</li>
+                <li>4. French Fries - $2.49</li>
+                <li>5. Soda - $1.49</li>
+            </ul>
+        </section>
+        <section class="order">
+            <h2>Your Order</h2>
+            <form action="receipt.html" method="post">
+                <label for="item_num">Item Number:</label>
+                <input type="number" id="item_num" 
+                name="item_num" min="1" max="5" required>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" 
+                name="quantity" min="1" required>
+                <button type="submit">Add to Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Per Scholas Fast Food Ordering System</p>
+    </footer>
+</body>
+</html>
