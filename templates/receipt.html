@@ -3,21 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static\style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>Order Receipt</title>
 </head>
 <body>
     <header>
-        <h1>Order Confirmation</h1>
+        <h1>Order Receipt</h1>
     </header>
     <main>
-        <section class="receipt">
-            <h2>Your Order Summary</h2>
-            <!-- Insert order summary details here using server-side scripting -->
+        <section class="order-details">
+            <h2>Your Order</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Item Price</th>
+                    <th>Total</th>
+                </tr>
+                {% for item_key, item_info in order.items() %}
+                <tr>
+                    <td class="center">{{ item_info.name }}</td>
+                    <td class="center">{{ item_info.quantity }}</td>
+                    <td class="center">${{ item_info.price }}</td>
+                    <td class="center">${{ item_info.price * item_info.quantity }}</td>
+                </tr>
+                {% endfor %}
+                <tr>
+                    <td colspan="3" class="center"><strong>Total Cost:</strong></td>
+                    <td class="center">${{ total_cost }}</td>
+                </tr>
+            </table>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Fast Food Ordering</p>
+        <p>&copy; {{ current_year }} Per Scholas Fast Food Ordering</p>
     </footer>
 </body>
 </html>
