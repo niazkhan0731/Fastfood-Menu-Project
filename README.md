@@ -1,9 +1,16 @@
 # Fast Food Menu Application 🍔
 
-This is our final project completed during our time at Per Scholas. My team and I worked together in a real-world, collaborative environment to create a Fast Food Menu Application. We used technologies like HTML, CSS, Python, Flask, and made use of AWS Services, specifically EC2, Cloud9, and MariaDB. Below, I'll explain the steps we took to make it all happen and where you can see the project in action.
+This is our final project, which we successfully completed during our time at Per Scholas. Throughout this journey, my team and I emphasized the significance of following established Software Development Life Cycle (SDLC) principles and embracing Agile development methodologies for effective collaboration.
 <br><br>
 <img width="1183" alt="Screenshot 2023-09-21 at 4 38 24 PM" src="https://github.com/niazkhan0731/Fastfood-Menu-Project/assets/135728087/1a87ca0d-198c-4d5f-a05c-608c34d0bf85">
-<br>
+<br><br>
+In a real-world, collaborative environment, we embarked on the creation of a Fast Food Menu Application. Leveraging a diverse set of technologies, including HTML, CSS, Python, Flask, and AWS Services such as EC2, Cloud9, and MariaDB, we aimed to demonstrate the power of a well-structured development process.
+
+By adhering to SDLC, we ensured that our project was well-organized, with clearly defined stages, requirements, and goals. This systematic approach allowed us to efficiently manage our project's scope, track progress, and address issues as they arose.
+
+Additionally, our adoption of Agile methodologies fostered collaboration among team members, promoting flexibility and adaptability throughout the development process. Agile practices, such as regular stand-up meetings and iterative development, enabled us to respond to changing requirements and feedback from stakeholders promptly.
+
+As a result of our commitment to SDLC and Agile methodologies, we were able to bring this Fast Food Menu Application to life successfully. Below, I'll provide an overview of the steps we took to make it all happen and where you can experience the project in action.
 
 ## Step 1: Github Collaboration
 
@@ -20,6 +27,10 @@ As the saying goes, "First impressions matter". We were determined to ensure tha
 ## Step 5: Making app.py work
 
 Our project came to life with the development of app.py. This Python script was the engine powering our Fast Food Menu Application, connecting the front-end and back-end seamlessly. We carefully coded it to ensure that data flowed from index.html to receipt.html, allowing users to interact with the application as intended.
+
+# Step 6: Connecting databaselogic.py
+
+We made the decision to connect to and store all real-time data in a MySQL database. To achieve this, we utilized databaselogic.py to develop the necessary code for our application. This code enables our application not only to establish connections and display a list of available items for sale but also to seamlessly transmit calculations performed in the background by app.py directly to our database in real-time. As a practical example, this approach allows our company to continually monitor key details such as the date an order was placed, the specific item ordered, its quantity, and the total order amount.
 
 ## Step 6: Leveraging AWS Services - Cloud9
 
