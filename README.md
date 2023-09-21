@@ -1,8 +1,9 @@
 # Fast Food Menu Application 🍔
 
 This is our final project completed during our time at Per Scholas. My team and I worked together in a real-world, collaborative environment to create a Fast Food Menu Application. We used technologies like HTML, CSS, Python, Flask, and made use of AWS Services, specifically EC2, Cloud9, and MariaDB. Below, I'll explain the steps we took to make it all happen and where you can see the project in action.
-
-View the Project Live Here:
+<br><br>
+<img width="1183" alt="Screenshot 2023-09-21 at 4 38 24 PM" src="https://github.com/niazkhan0731/Fastfood-Menu-Project/assets/135728087/1a87ca0d-198c-4d5f-a05c-608c34d0bf85">
+<br><br>
 
 ## Step 1: Github Collaboration
 
