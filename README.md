@@ -16,19 +16,23 @@ As a result of our commitment to SDLC and Agile methodologies, we were able to b
 
 Our journey began with a strategic act: establishing the project's heartbeat on GitHub. I initiated the repository and promptly invited my team members as collaborators. This foundational step ensured that we could work seamlessly together, employing version control to keep our project on the path to success.
 
-## Step 2: Starting With index.html
+## Step 2: Starting With 'index.html'
 
-With our collaboration environment solidified, we delved into crafting the very essence of our application—the user interface. Our HTML masterpiece, known as index.html, laid the groundwork for the front-end. To maintain best practices, we placed this file within the 'templates' folder—a choice that holds is vital for our Flask-based application. It is here that Flask would later draw the templates required for rendering dynamic content.
+With our collaboration environment solidified, we delved into crafting the very essence of our application—the user interface. Our HTML masterpiece, known as index.html, laid the groundwork for the front-end. To maintain best practices, we placed this file within the 'templates' folder — a choice that holds is vital for our Flask-based application. It is here that Flask would later draw the templates required for rendering dynamic content.
 
-## Step 4: Styling With styles.css
+## Step 3: Displaying Results on 'receipt.html'
+
+To showcase the results of the calculations performed on 'index.html,' we created 'receipt.html' as the canvas for presenting the output. This step was crucial in providing users with a clear and organized representation of their selections, displaying the ordered item, its quantity, and the total price for the order.
+
+## Step 3: Styling With 'styles.css'
 
 As the saying goes, "First impressions matter". We were determined to ensure that our application not only functioned flawlessly but also radiated aesthetic appeal. The styles.css file underwent meticulous curation to elevate the user experience and present an engaging, unified design. To maintain best practices, we housed this style file within the 'static' folder. This strategic placement was essential to facilitate Flask's streamlined access to the styles, ensuring that our application looked polished and consistent across all its web pages.
 
-## Step 5: Making 'app.py' Work
+## Step 4: Making 'app.py' Work
 
 Our project came to life with the development of app.py. This Python script was the engine powering our Fast Food Menu Application, connecting the front-end and back-end seamlessly. We carefully coded it to ensure that data flowed from index.html to receipt.html, allowing users to interact with the application as intended.
 
-# Step 6: Connecting 'databaselogic.py'
+## Step 5: Connecting 'databaselogic.py'
 
 We made the decision to connect to and store all real-time data in a MySQL database. To achieve this, we utilized databaselogic.py to develop the necessary code for our application. This code enables our application not only to establish connections and display a list of available items for sale but also to seamlessly transmit calculations performed in the background by app.py directly to our database in real-time. As a practical example, this approach allows our company to continually monitor key details such as the date an order was placed, the specific item ordered, its quantity, and the total order amount.
 
