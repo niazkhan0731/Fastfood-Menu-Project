@@ -4,4 +4,4 @@ Welcome to our final project, conceived and nurtured during our tenure at Per Sc
 
 Our project is a living entity, evolving with each passing day. We invite you to stay tuned for daily updates that showcase our continuous progress.
 
-Checkout Our Project Here: 
+View Our Project Here:
