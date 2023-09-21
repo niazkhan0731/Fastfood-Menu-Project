@@ -1,20 +1,18 @@
 from flask import Flask, render_template, request, redirect, url_for
+import databaselogic
+import datetime
 
 app = Flask(__name__)
 
-menu = {
-    '1': {'name': 'Hamburger', 'price': 5.99, 'image': 'Hamburger.jpeg'},
-    '2': {'name': 'Cheeseburger', 'price': 6.49, 'image': 'Cheeseburger.jpeg'},
-    '3': {'name': 'Chicken Sandwich', 'price': 7.99, 'image': 'Chicken_sandwich.jpeg'},
-    '4': {'name': 'French Fries', 'price': 2.49, 'image': 'Frenchfries.jpeg'},
-    '5': {'name': 'Soda', 'price': 1.49, 'image': 'Soda.jpeg'},
-}
-
+menu = databaselogic.get_menu_from_database()
 order = {}
+order_num = 0  # Define order_num as a global variable and initialize it to 0
 
 @app.route('/', methods=['GET', 'POST'])
 def place_order():
+    global order_num  # Use a global variable for order_num
     if request.method == 'POST':
+        order_date = datetime.datetime.now()  # Get the current date and time
         for item_num, quantity in request.form.items():
             if item_num.startswith('quantity_'):
                 item_num = item_num.replace('quantity_', '')
@@ -28,12 +26,17 @@ def place_order():
                             order[item_num]['quantity'] += quantity
                         else:
                             order[item_num] = {'name': menu[item_num]['name'], 'price': menu[item_num]['price'], 'quantity': quantity}
+                        
+                       
                 except ValueError:
                     pass
 
-        total_cost = round(calculate_total(order),2)
+        total_cost = round(calculate_total(order), 2)
+        order_num += 1  # Increment order_num for each new order
+        # Insert the order into the MariaDB database tables
+        insert_data(order_date, order_num, total_cost, menu, request.form)
         return render_template('receipt.html', order=order, total_cost=total_cost)
-
+    
     return render_template('index.html', menu=menu)
 
 def calculate_total(order):
@@ -41,6 +44,22 @@ def calculate_total(order):
     for item_info in order.values():
         total += item_info['price'] * item_info['quantity']
     return total
+
+# Insert into Order and Order_Details tables in the MariaDB database
+def insert_data(order_date, order_num, total_cost, menu, form_data):
+    databaselogic.insert_order(order_date, order_num, total_cost)
+    for item_key, quantity in form_data.items():
+        if item_key.startswith('quantity_'):
+            item_num = item_key.replace('quantity_', '')  # Extract the item number from the key
+            try:
+                quantity = int(quantity)
+                if quantity <= 0:
+                    continue
+
+                if item_num in menu:
+                    databaselogic.insert_orders_details(menu[item_num]['name'], quantity, menu[item_num]['price'], order_date, total_cost, order_num)
+            except ValueError:
+                pass
 
 if __name__ == '__main__':
     app.run(debug=True)
