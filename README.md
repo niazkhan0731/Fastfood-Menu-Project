@@ -1,19 +1,7 @@
-# This is a comment!
-# This is kim's comment
-# This is a comment from Bhuvana and me
-# Python-Project
-This is my final Per Scholas project utilizing HTML, CSS, Python, Flask, and AWS.
+# Fast Food Menu Application 🍔
 
-The steps I took to accomplish this is:
+Welcome to our final project, conceived and nurtured during our tenure at Per Scholas! Our united team embarked on a journey into the dynamic realm of real-world development to forge an engaging Fast Food Menu Application. Fueled by the synergy of HTML, CSS, Python, and Flask, we harnessed the power of AWS Services, encompassing EC2, Cloud9, and MariaDB, to breathe life into this endeavor. Delve into our individual branches to witness the distinct contributions of each team member.
 
-## Step 1:
+Our project is a living entity, evolving with each passing day. We invite you to stay tuned for daily updates that showcase our continuous progress.
 
-Here I will list the step 1
-
-## Step 2:
-
-Here I will list the step 2
-
-## Step 3:
-
-Here is my step there
+View Our Project Here:
