@@ -1,0 +1,80 @@
+Instructions provided by @sreedevi-langoju
+
+Necessary Steps to run  Fastfood Python Project On cloud 9:
+
+Goto Cloud9 terminal
+Clone the project files from Github main branch: 
+		  git clone  https://github.com/niazkhan0731/Fastfood-Menu-Project.git
+
+2. Goto your project folder : Fastfood-Menu-Project
+
+	cd Fastfood-Menu-Project/
+	
+3. Run this command to install to flask : 
+	pip install  flask
+
+4. Run this command to install  mysql connector to connect to your database through Python code:
+	pip install mysql-connector-python
+
+5. Run this command to install MariaDB  on EC2 insatnce :  
+	sudo yum install install mariadb mariadb-server.
+
+6. Run this command to check status the MariaDB :
+	sudo systemctl status mariadb
+
+7. Run this command to start the MariaDB
+	sudo systemctl start  mariadb
+
+8. Login to the Database using the below command :
+	  mysql -u root 
+
+9. Enter the below command to see the databases inside the MariaDB Database:
+	show databases;
+
+10. Execute the below query to create fastfood database 
+	create database fastfood;
+
+11. Execute the below query to use the fastfood database further:
+	use fastfood;
+
+12. Execute the below query to create a table called Menu:
+
+	CREATE TABLE Menu ( Item_Num INT NOT NULL PRIMARY KEY AUTO_INCREMENT , Item_Name VARCHAR(25) NOT NULL,Price DECIMAL(10,2) NOT NULL ,Image VARCHAR(25));
+
+13. Execute the below queries to insert data into the Menu table:( You can run one by query also)
+
+INSERT INTO Menu ( Item_Name,Price, Image ) Values (‘Hamburger',5.99,'Hamburger.jpeg');
+
+INSERT INTO Menu ( Item_Name, Price,Image ) Values (‘Cheeseburger',6.49,'Cheeseburger.jpeg');
+
+INSERT INTO Menu ( Item_Name,Price,Image) Values ('Chicken Sandwich’,7.99,'Chicken_sandwich.jpeg');
+
+INSERT INTO Menu ( Item_Name,Price,Image ) Values ('French Fries’,2.49,'Frenchfries.jpeg');
+
+INSERT INTO Menu ( Item_Name,Price,Image ) Values (‘Soda’,1.49,'Soda.jpeg');
+
+
+14. Execute the query to see data is inserted into the Menu table or not :
+	 select * from Menu;
+
+15. Execute the below query to create a table called Orders:
+	CREATE TABLE Orders (Order_Num INT NOT NULL PRIMARY KEY,Order_Date DATE, Total_Cost  DECIMAL(10,2) );
+
+16. Execute the query to see table was created or not :
+	  describe Orders;
+
+17. Execute the below query to create a table called Orders_Details:
+
+	CREATE TABLE Orders_Details (Order_Detail_Num INT NOT NULL PRIMARY KEY AUTO_INCREMENT,Order_Date DATE, Item_Name VARCHAR(25) NOT NULL, Price DECIMAL(10,2) NOT NULL, Quantity INT, Order_Num INT NOT NULL,FOREIGN KEY (Order_Num) REFERENCES Orders(Order_Num) );
+
+18. Execute the query to see table was created or not :
+	  describe Orders_Details;
+
+19. If you want to exit from the Database run the below command, it will go back to the command line:
+          exit;
+
+20. To run our Flask application on cloud9, run the below commands one by one in the terminal on your project folder :
+	Ex: voclabs:~/environment/Fastfood-Menu-Project : export FLASK_APP=app
+	voclabs:~/environment/Fastfood-Menu-Project : export FLASK_ENV=development
+	voclabs:~/environment/Fastfood-Menu-Project :  flask run —host=0.0.0.0
+
