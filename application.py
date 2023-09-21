@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 
-app = Flask(__name__)
+application = Flask(__name__)
+app=application
 
 menu = {
     '1': {'name': 'Hamburger', 'price': 5.99, 'image': 'Hamburger.jpeg'},
