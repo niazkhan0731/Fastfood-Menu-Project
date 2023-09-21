@@ -4,4 +4,5 @@ Welcome to our final project, conceived and nurtured during our tenure at Per Sc
 <br><br>
 <img width="1183" alt="Screenshot 2023-09-21 at 4 38 24 PM" src="https://github.com/niazkhan0731/Fastfood-Menu-Project/assets/135728087/02cd2e13-c48d-4925-9e15-fbd10aaaa50b">
 <br>
+## Next steps:
 Our project is a living entity, evolving with each passing day. We invite you to stay tuned for daily updates that showcase our continuous progress.
