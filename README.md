@@ -40,11 +40,11 @@ To host and manage our application, we harnessed the capabilities of AWS Service
 
 Our project's data management relied on the robust MariaDB, an integral component of our AWS infrastructure. This relational database ensured data integrity, security, and efficiency. It played a crucial role in storing and retrieving the information needed to deliver a seamless user experience.
 
-# Challenges Faced:
+# Challenges faced:
 
 Our journey was not without its challenges. Debugging app.py to ensure the seamless transfer of data between index.html and receipt.html, especially after intricate mathematical operations, posed a significant hurdle. Additionally, configuring the EC2 instance's security group to allow public access and enabling SSH ports for remote CLI access required careful consideration and attention to security best practices.
 
-# Conclusion and a New Beginning!
+# Conclusion and a new beginning!
 
 The culmination of our hard work and dedication is showcased in this repository, housing all the files and code for our Fast Food Menu Application. Throughout this project, we embraced the best practices of Software Development Life Cycle (SDLC), delivering a solution that demonstrates our commitment to excellence in software engineering.
 
