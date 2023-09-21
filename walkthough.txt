@@ -43,16 +43,11 @@ Clone the project files from Github main branch:
 
 13. Execute the below queries to insert data into the Menu table:( You can run one by query also)
 
-INSERT INTO Menu ( Item_Name,Price, Image ) Values (‘Hamburger',5.99,'Hamburger.jpeg');
-
-INSERT INTO Menu ( Item_Name, Price,Image ) Values (‘Cheeseburger',6.49,'Cheeseburger.jpeg');
-
-INSERT INTO Menu ( Item_Name,Price,Image) Values ('Chicken Sandwich’,7.99,'Chicken_sandwich.jpeg');
-
-INSERT INTO Menu ( Item_Name,Price,Image ) Values ('French Fries’,2.49,'Frenchfries.jpeg');
-
-INSERT INTO Menu ( Item_Name,Price,Image ) Values (‘Soda’,1.49,'Soda.jpeg');
-
+INSERT INTO Menu ( Item_Name,Price, Image ) Values ('Hamburger',5.99,'Hamburger.jpeg');
+INSERT INTO Menu ( Item_Name, Price,Image ) Values ('Cheeseburger',6.49,'Cheeseburger.jpeg');
+INSERT INTO Menu ( Item_Name,Price,Image) Values ('Chicken Sandwich',7.99,'Chicken_sandwich.jpeg');
+INSERT INTO Menu ( Item_Name,Price,Image ) Values ('French Fries',2.49,'Frenchfries.jpeg');
+INSERT INTO Menu ( Item_Name,Price,Image ) Values ('Soda',1.49,'Soda.jpeg');
 
 14. Execute the query to see data is inserted into the Menu table or not :
 	 select * from Menu;
