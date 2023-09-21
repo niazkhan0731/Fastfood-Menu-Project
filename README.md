@@ -24,23 +24,23 @@ With our collaboration environment solidified, we delved into crafting the very 
 
 To showcase the results of the calculations performed on 'index.html,' we created 'receipt.html' as the canvas for presenting the output. This step was crucial in providing users with a clear and organized representation of their selections, displaying the ordered item, its quantity, and the total price for the order.
 
-## Step 3: Styling With 'styles.css'
+## Step 4: Styling With 'styles.css'
 
 As the saying goes, "First impressions matter". We were determined to ensure that our application not only functioned flawlessly but also radiated aesthetic appeal. The styles.css file underwent meticulous curation to elevate the user experience and present an engaging, unified design. To maintain best practices, we housed this style file within the 'static' folder. This strategic placement was essential to facilitate Flask's streamlined access to the styles, ensuring that our application looked polished and consistent across all its web pages.
 
-## Step 4: Making 'app.py' Work
+## Step 5: Making 'app.py' Work
 
 Our project came to life with the development of app.py. This Python script was the engine powering our Fast Food Menu Application, connecting the front-end and back-end seamlessly. We carefully coded it to ensure that data flowed from index.html to receipt.html, allowing users to interact with the application as intended.
 
-## Step 5: Connecting 'databaselogic.py'
+## Step 6: Connecting 'databaselogic.py'
 
 We made the decision to connect to and store all real-time data in a MySQL database. To achieve this, we utilized databaselogic.py to develop the necessary code for our application. This code enables our application not only to establish connections and display a list of available items for sale but also to seamlessly transmit calculations performed in the background by app.py directly to our database in real-time. As a practical example, this approach allows our company to continually monitor key details such as the date an order was placed, the specific item ordered, its quantity, and the total order amount.
 
-## Step 6: Leveraging AWS Services - Cloud9
+## Step 7: Leveraging AWS Services - Cloud9
 
 To host and manage our application, we leveraged the capabilities of AWS Services, particularly Cloud9. This cloud-based integrated development environment offered the scalability and accessibility we needed to effectively develop, test, and deploy our project. The cloud environment made collaboration even smoother, enabling us to work on the project from anywhere.
 
-## Step 7: Harnessing AWS Services - MariaDB
+## Step 8: Harnessing AWS Services - MariaDB
 
 Our project's data management relied on the robust MariaDB, an integral component of our AWS infrastructure. This relational database ensured data integrity, security, and efficiency. It played a crucial role in storing and retrieving the information needed to deliver a seamless user experience.
 
