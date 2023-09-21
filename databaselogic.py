@@ -1,5 +1,5 @@
 import mysql.connector
-
+#Code added to connect MariaDB
 #Establish a database connection
 def connectdatabase():
     # Database configuration
