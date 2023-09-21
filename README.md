@@ -34,7 +34,7 @@ We made the decision to connect to and store all real-time data in a MySQL datab
 
 ## Step 6: Leveraging AWS Services - Cloud9
 
-To host and manage our application, we harnessed the capabilities of AWS Services, particularly Cloud9. This cloud-based integrated development environment offered the scalability and accessibility we needed to effectively develop, test, and deploy our project. The cloud environment made collaboration even smoother, enabling us to work on the project from anywhere.
+To host and manage our application, we leveraged the capabilities of AWS Services, particularly Cloud9. This cloud-based integrated development environment offered the scalability and accessibility we needed to effectively develop, test, and deploy our project. The cloud environment made collaboration even smoother, enabling us to work on the project from anywhere.
 
 ## Step 7: Harnessing AWS Services - MariaDB
 
