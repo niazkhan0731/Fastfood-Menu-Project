@@ -18,7 +18,7 @@ Our journey began with a strategic act: establishing the project's heartbeat on 
 
 ## Step 2: Starting With 'index.html'
 
-With our collaboration environment solidified, we delved into crafting the very essence of our application—the user interface. Our HTML masterpiece, known as index.html, laid the groundwork for the front-end. To maintain best practices, we placed this file within the 'templates' folder — a choice that holds is vital for our Flask-based application. It is here that Flask would later draw the templates required for rendering dynamic content.
+With our collaboration environment solidified, we delved into crafting the very essence of our application—the user interface. Our HTML masterpiece, known as index.html, laid the groundwork for the front-end. To maintain best practices, we placed this file within the 'templates' folder — a choice that is vital for our Flask-based application. It is here that Flask would later draw the templates required for rendering dynamic content.
 
 ## Step 3: Displaying Results on 'receipt.html'
 
