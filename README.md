@@ -6,7 +6,7 @@ This is our final project, which we successfully completed during our time at Pe
 <br><br>
 In a real-world, collaborative environment, we embarked on the creation of a Fast Food Menu Application. Leveraging a diverse set of technologies, including HTML, CSS, Python, Flask, and AWS Services such as EC2, Cloud9, and MariaDB, we aimed to demonstrate the power of a well-structured development process.
 
-By adhering to SDLC, I ensured that our project was well-organized, with clearly defined stages, requirements, and goals. This systematic approach allowed me to efficiently manage our project's scope, track progress, and address issues as they arose.
+By adhering to SDLC best practices, I ensured that our project was well-organized, with clearly defined stages, requirements, and goals. This systematic approach allowed me to efficiently manage our project's scope, track progress, and address issues as they arose.
 
 Additionally, our adoption of Agile methodologies fostered collaboration among team members, promoting flexibility and adaptability throughout the development process. Agile practices, such as regular stand-up meetings and iterative development, enabled us to respond to changing requirements and feedback from stakeholders promptly.
 
