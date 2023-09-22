@@ -34,7 +34,7 @@ Our project came to life with the development of app.py. This Python script was 
 
 ## Step 6: Connecting 'databaselogic.py'
 
-We made the decision to connect to and store all real-time data in a MySQL database. To achieve this, we utilized databaselogic.py to develop the necessary code for our application. This code enables our application not only to establish connections and display a list of available items for sale but also to seamlessly transmit calculations performed in the background by app.py directly to our database in real-time. As a practical example, this approach allows our company to continually monitor key details such as the date an order was placed, the specific item ordered, its quantity, and the total order amount.
+We made the decision to connect to and store all real-time data in a MySQL database in the cloud. To achieve this, we utilized databaselogic.py to develop the necessary code for our application. This code enables our application not only to establish connections and display a list of available items for sale but also to seamlessly transmit calculations performed in the background by app.py directly to our database in real-time. As a practical example, this approach allows our company to continually monitor key details such as the date an order was placed, the specific item ordered, its quantity, and the total order amount.
 
 ## Step 7: Leveraging AWS Services - Cloud9
 
