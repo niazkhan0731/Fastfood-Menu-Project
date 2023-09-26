@@ -25,7 +25,7 @@
                     <td class="center">{{ item_info.name }}</td>
                     <td class="center">{{ item_info.quantity }}</td>
                     <td class="center">${{ item_info.price }}</td>
-                    <td class="center">${{ item_info.price * item_info.quantity }}</td>
+                    <td class="center">${{ (item_info.price * item_info.quantity) | round(2) }}</td><!-- Round the item total to 2 decimal places -->
                 </tr>
                 {% endfor %}
                 <tr>
@@ -40,3 +40,4 @@
     </footer>
 </body>
 </html>
+

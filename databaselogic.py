@@ -48,15 +48,18 @@ def get_menu_from_database():
         closeAll(cursor,connection)
 
 
-def insert_order(order_date,order_num,total_cost):
+def insert_order(order_date,total_cost):
     connection=connectdatabase()
     cursor=openCursor(connection)
     # Use prepared statements to insert the order into the database with the order date
-    insert_orders_query = "INSERT INTO Orders (Order_Num,Order_Date, Total_Cost) VALUES (%s,%s,%s)"
-    orders_values = (order_num,order_date,total_cost)
+    insert_orders_query = "INSERT INTO Orders (Order_Date, Total_Cost) VALUES (%s,%s)"
+    orders_values = (order_date,total_cost)
     try:
         cursor.execute(insert_orders_query, orders_values)
         connection.commit()
+        # Retrieve the generated order_num
+        order_num = cursor.lastrowid
+        return order_num
     except mysql.connector.Error as err:
         print(f"Database Error: {err}")
     finally:
