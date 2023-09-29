@@ -4,9 +4,9 @@ import mysql.connector
 def connectdatabase():
     # Database configuration
     db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '',
+    'host': 'database-1.cojfedivjd6f.us-west-2.rds.amazonaws.com',
+    'user': 'admin',
+    'password': 'admin2801',
     'database': 'fastfood'
     }
 
